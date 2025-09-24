@@ -10,9 +10,10 @@ public class Main {
      t = sc.nextInt();
 
      m += t;
-     if(m >= 60) System.out.println((h+(m/60) >= 24 ? h+(m/60) - 24 :h+(m/60) ) + " " + (m%60));
+     if(m >= 60) System.out.println((h+(m/60) >= 24 ? (h+(m/60))%24 :h+(m/60) ) + " " + (m%60));
      else System.out.println(h + " " + m);
 
   }
 
 }
+
