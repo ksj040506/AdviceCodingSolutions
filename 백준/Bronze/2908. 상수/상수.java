@@ -5,8 +5,8 @@ public class Main {
       String num1 = sc.next();
       String num2 = sc.next();
       
-      int a = Integer.parseInt("" + num1.charAt(2) + num1.charAt(1) + num1.charAt(0));
-      int b = Integer.parseInt("" + num2.charAt(2) + num2.charAt(1) + num2.charAt(0));
+      int a = Integer.parseInt(new StringBuilder(num1).reverse().toString());
+      int b = Integer.parseInt(new StringBuilder(num2).reverse().toString());
 
       System.out.println(Math.max(a,b));
   }     
